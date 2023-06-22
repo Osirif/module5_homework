@@ -1,25 +1,13 @@
-let x;
-let type;
-let number;
-let string;
-let nan;
-let boolean;
-
-boolean = 'boolean';
-nan = 'nan';
-string = 'string';
-number = 'number';
-
-x=undefined;
-type=typeof x;
+let x=true;
+let type=typeof x;
 switch (type){
-    case number:
+    case 'number':
         console.log('x — число');
     break;
-    case string:
+    case 'string':
         console.log('x — строка');
     break;
-    case boolean:
+    case 'boolean':
         console.log('x — логический тип');
     break;
     default:

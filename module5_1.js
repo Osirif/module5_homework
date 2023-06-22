@@ -1,15 +1,6 @@
-let num;
-let type;
-let number;
-let string;
-let nan;
-
-nan = 'nan';
-string = 'string';
-number = 'number';
-num=+prompt('Введите значение');
-type=typeof num;
-if(type == number){
+let nan = 'nan';
+let num=+prompt('Введите значение');
+if(typeof num == 'number' &&!isNaN(num)){
     if((num%2)==0){
         alert('чётное')
     }
@@ -17,11 +8,6 @@ if(type == number){
         alert('нечётное')
     }
 }
-
-else if(type == nan){
-    alert('Упс, кажется, вы ошиблись')
-}
-
 else{
     alert('Упс, кажется, вы ошиблись')
 }
