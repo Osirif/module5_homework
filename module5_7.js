@@ -3,19 +3,21 @@ function cycle(array) {
     let odd=0;
     let even=0;
     let another=0;
-    for(var i = 0; i < array.length - 1; i++) {
-        if (typeof array[i]== 'number'){
-            if(array[i]%2==0) {
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] === 0 || typeof(arr[i] != 'number')) 
+        {
+            another++;
+        } 
+        else 
+        {
+            if (arr[i] % 2 === 0) 
+            {
                 even++;
-            }
-    
-            else{
+            } 
+            else 
+            {
                 odd++;
             }
-        }
-        
-        else{
-            another++;
         }
     }
     console.log(even);
